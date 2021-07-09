@@ -91,6 +91,40 @@ public class Main {
         System.out.println ("The area of the square is " + (side*side));
     }
 
+    public static void q12(){
+        int boys, girls;
+        boys = 17;
+        girls = 15;
+        System.out.println ("Number of students in the class is " + (boys+girls));
+        System.out.println ("Number of students can be added to the class is " + (42-(boys+girls)));
+    }
+
+    public static void q13(){
+        int num = 100;
+        System.out.println ("num=" + num);
+    }
+
+    public static void q14a(){
+        int num = 100;
+        int x = num++;
+        System.out.println ("num=" + num);
+        System.out.println ("x=" + x);
+    }
+
+    public static void q14b(){
+        int num = 100;
+        int x = ++num;
+        System.out.println ("num=" + num);
+        System.out.println ("x=" + x);
+    }
+
+    public static void q14c(){
+        int num = 100;
+        int x = num--;
+        System.out.println ("num=" + num);
+        System.out.println ("x=" + x);
+    }
+
     public static void main(String[] args) {
 //        q1();
 //        q2();
@@ -102,6 +136,11 @@ public class Main {
 //        q8b();
 //        q9a();
 //        q10();
-        q11();
+//        q11();
+//        q12();
+//        q13();
+//        q14a();
+//        q14b();
+        q14c();
     }
 }
