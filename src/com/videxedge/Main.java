@@ -173,6 +173,34 @@ public class Main {
         System.out.println ("      " + num1 + " " + num2 + " " + num3);
     }
 
+    public static void q19a(){
+        Scanner input = new Scanner(System.in);
+        int num1, diff;
+        System.out.println ("Enter 1st number of series:");
+        num1 = input.nextInt();
+        System.out.println ("Enter difference of series:");
+        diff = input.nextInt();
+        int num3 = num1 + 2 * diff;
+        int num4 = num3 + diff;
+        System.out.println ("The 3rd number of the series is " + num3);
+        System.out.println ("The 4th number of the series is " + num4);
+    }
+
+    public static void q19b(){
+        Scanner input = new Scanner(System.in);
+        int num1, diff;
+        System.out.println ("Enter 1st number of series:");
+        num1 = input.nextInt();
+        System.out.println ("Enter difference of series:");
+        diff = input.nextInt();
+        int num3 = num1 + 2 * diff;
+        int num4 = num3 + diff;
+        System.out.println ("The 3rd number of the series is " + num3);
+        System.out.println ("The 4th number of the series is " + num4);
+        int sum = num1 + num1 + diff + num3 + num4;
+        System.out.println ("The sum of first 4 numbers of the series is " + sum);
+    }
+
     public static void main(String[] args) {
 //        q1();
 //        q2();
@@ -193,6 +221,8 @@ public class Main {
 //        q15();
 //        q16();
 //        q17();
-        q18();
+//        q18();
+//        q19a();
+        q19b();
     }
 }
