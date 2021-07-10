@@ -1,5 +1,7 @@
 package com.videxedge;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void q1(){
@@ -125,6 +127,52 @@ public class Main {
         System.out.println ("x=" + x);
     }
 
+    public static void q15(){
+        Scanner input = new Scanner(System.in);
+        int num;
+        System.out.println ("enter int number");
+        num = input.nextInt();
+        System.out.println ("num = " + num);
+    }
+
+    public static void q16(){
+        Scanner input = new Scanner(System.in);
+        int num1, num2;
+        System.out.println ("Enter 1st int number:");
+        num1 = input.nextInt();
+        System.out.println ("Enter 2nd int number:");
+        num2 = input.nextInt();
+        System.out.println ("num2 = " + num2);
+        System.out.println ("num1 = " + num1);
+    }
+
+    public static void q17(){
+        Scanner input = new Scanner(System.in);
+        int length, width;
+        System.out.println ("Enter length int of rectangle:");
+        length = input.nextInt();
+        System.out.println ("Enter width int of rectangle:");
+        width = input.nextInt();
+        System.out.println ("The perimeter of the rectangle is " + (2*(length+width)));
+        System.out.println ("The area of the rectangle is " + (length*width));
+    }
+
+    public static void q18(){
+        Scanner input = new Scanner(System.in);
+        int num1, num2, num3;
+        System.out.println ("Enter 1st int number:");
+        num1 = input.nextInt();
+        System.out.println ("Enter 2nd int number:");
+        num2 = input.nextInt();
+        System.out.println ("Enter 3rd int number:");
+        num3 = input.nextInt();
+        System.out.println ("" + num1);
+        System.out.println (" " + num2);
+        System.out.println ("  " + num3);
+        System.out.println ("   " + num1 + " " + num2);
+        System.out.println ("      " + num1 + " " + num2 + " " + num3);
+    }
+
     public static void main(String[] args) {
 //        q1();
 //        q2();
@@ -141,6 +189,10 @@ public class Main {
 //        q13();
 //        q14a();
 //        q14b();
-        q14c();
+//        q14c();
+//        q15();
+//        q16();
+//        q17();
+        q18();
     }
 }
