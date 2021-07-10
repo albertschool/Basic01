@@ -341,6 +341,28 @@ public class Main {
         System.out.println ("Birthday in day: "+ (day+daysLeft)%7);
     }
 
+    public static void q31(){
+        Scanner input = new Scanner(System.in);
+        double a,b;
+        System.out.println ("enter two number");
+        a = input.nextDouble();
+        b = input.nextDouble();
+        double result = a%b;
+        System.out.println ("a = " + a);
+        System.out.println ("b = " + b);
+        System.out.println ("result="+result);
+    }
+
+    public static void q32a(){
+        Scanner input = new Scanner(System.in);
+        final double PI=3.14;
+        double radius , area;
+        System.out.println ("enter radius");
+        radius = input.nextDouble();
+        area = PI*radius*radius;
+        System.out.println ("area ="+ area);
+    }
+
     public static void main(String[] args) {
 //        q1();
 //        q2();
@@ -376,6 +398,8 @@ public class Main {
 //        q27();
 //        q28();
 //        q29();
-        q30();
+//        q30();
+//        q31();
+        q32a();
     }
 }
