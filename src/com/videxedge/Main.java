@@ -201,6 +201,22 @@ public class Main {
         System.out.println ("The sum of first 4 numbers of the series is " + sum);
     }
 
+    public static void q20(){
+        Scanner input = new Scanner(System.in);
+        int a; // first number;
+        int b; // second number
+        System.out.println ("enter first number");
+        a = input.nextInt();
+        System.out.println ("enter second number");
+        b = input.nextInt();
+        System.out.println ("a = " + a);
+        System.out.println ("b = " + b);
+        int c = a; // saving a value
+        a = b;
+        b = c;
+        System.out.println ("a = " + a);
+        System.out.println ("b = " + b);
+    }
     public static void main(String[] args) {
 //        q1();
 //        q2();
@@ -223,6 +239,7 @@ public class Main {
 //        q17();
 //        q18();
 //        q19a();
-        q19b();
+//        q19b();
+        q20();
     }
 }
