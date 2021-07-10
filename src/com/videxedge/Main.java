@@ -197,8 +197,7 @@ public class Main {
         int num4 = num3 + diff;
         System.out.println ("The 3rd number of the series is " + num3);
         System.out.println ("The 4th number of the series is " + num4);
-        int sum = num1 + num1 + diff + num3 + num4;
-        System.out.println ("The sum of first 4 numbers of the series is " + sum);
+        System.out.println ("The sum of first 4 numbers of the series is " + (num1 + num1 + diff + num3 + num4));
     }
 
     public static void q20(){
@@ -217,6 +216,131 @@ public class Main {
         System.out.println ("a = " + a);
         System.out.println ("b = " + b);
     }
+
+    public static void q21(){
+        double num;
+        num = 1.35;
+        System.out.println ("num=" + num);
+    }
+
+    public static void q22(){
+        Scanner input = new Scanner(System.in);
+        double num1, num2, num3, num4;
+        System.out.println ("Enter 1st number:");
+        num1 = input.nextDouble();
+        System.out.println ("Enter 2nd number:");
+        num2 = input.nextDouble();
+        System.out.println ("Enter 3rd number:");
+        num3 = input.nextDouble();
+        System.out.println ("Enter 4th number:");
+        num4 = input.nextDouble();
+        System.out.println ("The average is: " + (num1+num2+num3+num4)/4);
+    }
+
+    public static void q23a(){
+        int numI = 15;
+        double numD;
+        numD = numI;
+        System.out.println ("numI= " + numI);
+        System.out.println ("numD= " + numD);
+    }
+
+    public static void q23c(){
+        int numI;
+        double numD;
+        numD = 9.6;
+        numI = (int)numD;
+        System.out.println ("numI= " + numI);
+        System.out.println ("numD= " + numD);
+    }
+
+    public static void q24(){
+        char tav1 , tav2;
+        tav1 = 't';
+        tav2 = '+';
+        System.out.println ("tav1=" + tav1);
+        System.out.println ("tav2=" + tav2);
+    }
+
+    public static void q25a(){
+        int num;
+        char ch;
+        ch = 'c';
+        num = ch;
+        System.out.println ("num=" + num);
+        System.out.println ("ch=" + ch);
+    }
+
+    public static void q25c(){
+        int num;
+        char ch;
+        num = 99;
+        ch = (char) num;
+        System.out.println ("num=" + num);
+        System.out.println ("ch=" + ch);
+    }
+
+    public static void q26(){
+        Scanner input = new Scanner(System.in);
+        int a;
+        double b;
+        System.out.println ("enter two number");
+        a = input.nextInt();
+        b = input.nextDouble();
+        double result = a+b;
+        System.out.println ("a = " + a);
+        System.out.println ("b = " + b);
+        System.out.println ("result="+result);
+    }
+
+    public static void q27(){
+        Scanner input = new Scanner(System.in);
+        int a,b;
+        System.out.println ("enter two number");
+        a = input.nextInt();
+        b = input.nextInt();
+        int result = a%b;
+        System.out.println ("a = " + a);
+        System.out.println ("b = " + b);
+        System.out.println ("result="+result);
+    }
+
+    public static void q28(){
+        Scanner input = new Scanner(System.in);
+        int num;
+        System.out.println ("enter the 3 digit number");
+        num = input.nextInt();
+        int n1 = num % 10;
+        num = num / 10;
+        int n2 = num % 10;
+        int n3 = num / 10;
+        System.out.println ("result="+ (n1*100+n2*10+n3));
+    }
+
+    public static void q29(){
+        Scanner input = new Scanner(System.in);
+        int num;
+        System.out.println ("enter an int amount of money");
+        num = input.nextInt();
+        int n1 = num / 10;
+        num = num % 10;
+        int n2 = num / 5;
+        int n3 = num % 5;
+        System.out.println ("Amount of 10 coins: "+ n1);
+        System.out.println ("Amount of 5 coins: "+ n2);
+        System.out.println ("Amount of 1 coins: "+ n3);
+    }
+
+    public static void q30(){
+        Scanner input = new Scanner(System.in);
+        int day, daysLeft;
+        System.out.println ("Enter today number:");
+        day = input.nextInt();
+        System.out.println ("Enter days left to birthday:");
+        daysLeft = input.nextInt();
+        System.out.println ("Birthday in day: "+ (day+daysLeft)%7);
+    }
+
     public static void main(String[] args) {
 //        q1();
 //        q2();
@@ -240,6 +364,18 @@ public class Main {
 //        q18();
 //        q19a();
 //        q19b();
-        q20();
+//        q20();
+//        q21();
+//        q22();
+//        q23a();
+//        q23c();
+//        q24();
+//        q25a();
+//        q25c();
+//        q26();
+//        q27();
+//        q28();
+//        q29();
+        q30();
     }
 }
